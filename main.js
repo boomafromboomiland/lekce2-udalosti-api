@@ -30,10 +30,13 @@ function zmenFarbu() {
   odstavec.classList.toggle('red');
 }
 
-/*function zvacsi() {
-  let odstavec = document.querySelector('p');
-  
-}*/
+const font = document.querySelector('#font');
+
+function zvacsiFont() {
+  let fontSize = window.getComputedStyle(font, null).getPropertyValue('font-size');
+  let newFontSize = Number(fontSize.slice(0,2)) + 1;
+  font.style.fontSize = `${newFontSize}px`; 
+}
 
 function pustAudio() {
   let audioFile = document.getElementById('zvuk');
@@ -64,4 +67,5 @@ function hlasitost() {
 function opakovat() {
   let audioFile = document.getElementById('zvuk');
   audioFile.currentTime = 0;
+  //audioFile.play();
 }
