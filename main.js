@@ -6,5 +6,11 @@ nadpis.classList.add('aktivni');
 // nadpis.classList.remove('aktivni');
 // nadpis.classList.toggle('aktivni'); (zapne, ak nie je; vypne, ak je --> roll na menu)
 
+let pocitadlo = 0;
 
+function priNajetiNaStvorec() {
+  console.log('test' + pocitadlo);
+  //pocitadlo = pocitadlo + 1;
+  pocitadlo++;
+};
 
