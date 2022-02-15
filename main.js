@@ -30,10 +30,38 @@ function zmenFarbu() {
   odstavec.classList.toggle('red');
 }
 
-let velkostPisma = 16;
-
-function zvacsi() {
+/*function zvacsi() {
   let odstavec = document.querySelector('p');
-  console.log('velkostPisma' + 1);
-  velkostPisma++;
+  
+}*/
+
+function pustAudio() {
+  let audioFile = document.getElementById('zvuk');
+  audioFile.play();
+}
+
+function pauza() {
+  let audioFile = document.getElementById('zvuk');
+  audioFile.pause();
+}
+
+function stisit() {
+  let audioFile = document.getElementById('zvuk');
+  //audioFile.muted = true;
+  audioFile.volume = 0;
+}
+
+function hlasnejsie() {
+  let audioFile = document.getElementById('zvuk');
+  audioFile.volume = 1;
+}
+
+function hlasitost() {
+  let audioFile = document.getElementById('zvuk');
+  audioFile.volume = 0.5;
+}
+
+function opakovat() {
+  let audioFile = document.getElementById('zvuk');
+  audioFile.currentTime = 0;
 }
